@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Flashcards</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Top Corner Controls -->
+    <div class="top-controls">
+      <button id="langBtn" class="icon-btn" aria-label="Toggle Language">LA / EN</button>
+      <button id="themeBtn" class="icon-btn" aria-label="Toggle Theme"></button>
+    </div>
+    
+    <div class="header-group">
+      <h1 id="appTitle">Tabulae Memoriae Meae</h1>
+      <div class="stats-bar">
+        <span id="cardCounter">Tabula 0 ex 0</span>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="card-perspective" id="cardContainer">
+      <div class="card" id="card">
+        <div class="card-face card-front" id="cardFront">Nullae tabulae praesto</div>
+        <div class="card-face card-back" id="cardBack">Inporta Codicem</div>
+      </div>
+    </div>
+
+    <!-- Primary Controls -->
+    <div class="controls-primary">
+      <button id="prevBtn">← Retro</button>
+      <button id="flipBtn">Verte</button>
+      <button id="nextBtn">Porro →</button>
+    </div>
+
+    <!-- Secondary Controls -->
+    <div class="controls-secondary">
+      <button id="reverseBtn">Tergum ⇄</button>
+    </div>
+
+    <!-- Import & Reset -->
+    <div class="tools-section">
+      <div class="file-row">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <label for="fileInput" class="file-btn" id="importLabel">Inporta Codicem</label>
+          <input type="file" id="fileInput" accept=".txt,.csv,.json" />
+          <span class="file-name" id="fileNameDisplay">Nullum volumen selectum</span>
+        </div>
+        <button id="resetDeckBtn" class="btn-danger">Restitue</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
