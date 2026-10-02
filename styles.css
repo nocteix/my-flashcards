@@ -117,6 +117,8 @@ h1 {
   height: 270px;
   perspective: 1200px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .card {
